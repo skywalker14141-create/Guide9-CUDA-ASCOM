@@ -1,0 +1,42 @@
+﻿Guide 9.1 avec CUDA, ASCOM et N.I.N.A.
+
+INSTALLATION
+
+Ce pack complète une installation Windows de Guide 9.1 du 1er janvier 2019.
+Fermez Guide et les outils du pack. Sauvegardez guide.dat et tout fichier à
+remplacer, notamment asc_link.dll. Décompressez le ZIP dans le dossier qui
+contient guide9.exe, puis lancez Guide9-CUDA.exe depuis ce dossier.
+
+CUDA
+
+Activez « Utiliser MPCORB » dans Guide. Le moteur accélère le calcul de
+l’index des astéroïdes sur les GPU NVIDIA compatibles sm_86. Guide utilise
+automatiquement le processeur si CUDA est indisponible. Testé sur RTX 2050.
+
+ASCOM
+
+Installez la plateforme ASCOM et le pilote de votre monture, accessible aux
+applications 32 bits. Dans guide.dat, ajoutez SCOPE_EPOCH=2000 ou remplacez
+la valeur existante. Si asc_link.ini contient CoordinateMode, réglez-le sur
+J2000. Dans Guide9-CUDA, ouvrez Paramétrages → Contrôle monture, choisissez
+ASCOM Scope, validez, puis sélectionnez et configurez le pilote.
+Guide9-ASCOM.exe est un outil facultatif pour tester la connexion et lire
+la position de la monture. ASCOM a été testé avec le simulateur.
+
+PASSERELLE N.I.N.A.
+
+1. Lancez Guide9-NINA.exe et laissez sa fenêtre ouverte ou réduite.
+2. Dans N.I.N.A. → Options → Équipement → Planétarium, sélectionnez
+   Cartes du Ciel, hôte localhost, port 3293. Ce réglage se fait une fois.
+   La passerelle utilise cette entrée sans que Cartes du Ciel soit lancé.
+3. Centrez la cible dans Guide 9. Utilisez une seule fenêtre de Guide,
+   avec la Terre comme planète d’observation et le format J2000.
+4. Dans N.I.N.A. → Cadrage, cliquez sur l’épingle à droite de Coordonnées.
+   Le centre de la carte apparaît sous le nom « Centre Guide 9 ».
+
+L’import se fait sans fichier .mar et ne déplace pas la monture. La
+passerelle reconnaît Guide 9.1 du 1er janvier 2019 et le Guide9-CUDA fourni.
+La connexion reste sur le PC. Testé dans N.I.N.A. 3.3 Nightly #069.
+
+SHA-256 du guide9.exe d’origine
+32893608e82b014c84f9a3487263ec345f3611b75d5b0f786f7a878fbb047c9d
