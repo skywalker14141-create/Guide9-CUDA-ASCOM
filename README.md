@@ -2,7 +2,8 @@
 
 **[Télécharger le ZIP / Download the ZIP](Guide9-CUDA-ASCOM.zip)**
 
-Français
+Français:
+
 Ce pack complète une installation de Guide 9.1 du 1er janvier 2019 sur Windows 64 bits. Les deux éditions accélèrent l’indexation des astéroïdes MPCORB et prennent en charge ASCOM et la passerelle vers l’Assistant de cadrage de N.I.N.A.
 
 Ferme Guide et les outils du pack. Sauvegarde les fichiers à remplacer, puis copie le contenu du ZIP dans le dossier qui contient guide9.exe. Choisis l’exécutable adapté à ton GPU.
@@ -13,7 +14,8 @@ Active Utiliser MPCORB dans Guide. Si le GPU est indisponible ou que le calcul �
 
 Pour importer une cible, lance aussi Guide9-NINA.exe. Dans les options Planétarium de N.I.N.A., choisis Cartes du Ciel, hôte localhost, port 3293. Centre la cible dans Guide puis, dans N.I.N.A. → Cadrage, clique sur l’épingle à droite de Coordonnées.
 
-English (US)
+English (US):
+
 This package requires the January 1, 2019 build of Guide 9.1 and 64-bit Windows. Both editions accelerate MPCORB asteroid indexing and support ASCOM mount control and the N.I.N.A. Framing Assistant bridge.
 
 Close Guide and any package tools. Back up the files you will replace, then extract the ZIP alongside guide9.exe. Choose the executable for your GPU.
